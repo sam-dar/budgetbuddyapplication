@@ -1,8 +1,10 @@
-import { signInAction } from "@/app/actions";
+import { signInAction,signInWithGoogle } from "@/app/actions";
 import { FormMessage, Message } from "@/components/form-message";
 import { SubmitButton } from "@/components/submit-button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { Button } from "@/components/ui/button";
+
 import Link from "next/link";
 
 export default async function Login(props: { searchParams: Promise<Message> }) {
@@ -37,6 +39,9 @@ export default async function Login(props: { searchParams: Promise<Message> }) {
         <SubmitButton pendingText="Signing In..." formAction={signInAction}>
           Sign in
         </SubmitButton>
+
+      <Button onClick={signInWithGoogle}>Sign in with Google</Button>
+        
         <FormMessage message={searchParams} />
       </div>
     </form>
