@@ -343,19 +343,13 @@ export default function ViewExpensesPage() {
                             Update
                           </button>
                           <button
-                            className="bg-red-800 hover:bg-red-900 text-white px-3 py-2 rounded"
-                            onClick={() => handleDelete(expense.id)}
-                          >
-                            Delete
-                          </button>
-                          <button
                             onClick={() => handleDelete(expense.id)}
                             disabled={loading}
                             className={`${
                               loading
                                 ? "bg-gray-400 cursor-not-allowed"
                                 : "bg-red-800 hover:bg-red-900"
-                            } text-white px-2 py-1 rounded`}
+                            } text-white px-4 py-2 rounded`}
                           >
                             {loading ? "Deleting..." : "Delete"}
                           </button>
