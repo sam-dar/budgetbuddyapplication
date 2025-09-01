@@ -12,8 +12,8 @@ export default function Home() {
           Sign in now to unlock powerful tools and insights designed just for you.
         </p>
         <div className="mt-8 flex justify-center space-x-4">
-          <a href="/sign-up" className="px-6 py-3 bg-blue-500 text-white rounded-md shadow-md hover:bg-blue-600 transition">
-            Get Started
+          <a href="/dashboard2" className="px-6 py-3 bg-green-500 text-white text-xl rounded-md shadow-md hover:bg-green-600 transition">
+            Get Started with Budget Buddy
           </a>
         </div>
       </div>
