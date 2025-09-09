@@ -1,11 +1,18 @@
 {
+  "id": "/",
   "name": "Budget Buddy",
-  "short_name": "BB",
+  "short_name": "BBuddy",
+  "description": "Track and manage your expenses easily with reports, charts, and secure storage.",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
+  "display_override": ["standalone", "fullscreen"],
   "background_color": "#ffffff",
   "theme_color": "#0f172a",
   "orientation": "portrait",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["finance", "productivity"],
   "icons": [
     {
       "src": "/icons/icon-192.png",
@@ -18,7 +25,7 @@
       "type": "image/png"
     }
   ],
-    "screenshots": [
+  "screenshots": [
     {
       "src": "/screenshots/desktop.png",
       "sizes": "1280x720",
@@ -30,6 +37,19 @@
       "sizes": "375x667",
       "type": "image/png"
     }
+  ],
+  "shortcuts": [
+    {
+      "name": "Add Expense",
+      "short_name": "Add",
+      "description": "Quickly add a new expense",
+      "url": "/add"
+    },
+    {
+      "name": "View Reports",
+      "short_name": "Reports",
+      "description": "See your expense reports",
+      "url": "/view"
+    }
   ]
-
 }
