@@ -242,7 +242,7 @@ export default function ViewExpensesPage() {
                 return (
                   <tr
                     key={expense.id}
-                    className={`text-base text-center transition-all duration-300 ease-in-out ${
+                    className={`text-base text-center text-black transition-all duration-300 ease-in-out ${
                       isEditing
                         ? "bg-yellow-50 shadow-inner transform scale-105"
                         : "bg-white hover:bg-green-50"

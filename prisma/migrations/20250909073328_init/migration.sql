@@ -1,6 +1,6 @@
 -- CreateTable
-CREATE TABLE "Expense" (
-    "id" SERIAL NOT NULL,
+CREATE TABLE "public"."Expense" (
+    "id" TEXT NOT NULL,
     "title" TEXT NOT NULL,
     "amount" DOUBLE PRECISION NOT NULL,
     "category" TEXT NOT NULL,
